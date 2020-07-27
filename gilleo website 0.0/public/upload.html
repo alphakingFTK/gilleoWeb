@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+		<meta name="description" content="Gilleo app">
+		<meta name="keywords" content="Gilleo, app, Mobile, share, sharing, like, creator">
+		<meta name="author" content="Gilleo Inc">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <title>Gilleo | Upload</title>
+        <link rel="icon" href="./images/favicon.ico">
+
+        <link href="css/style.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet" type='text/css'>
+
+        <script src="https://kit.fontawesome.com/966fecca0d.js" crossorigin="anonymous"></script>
+
+        
+    </head>
+
+    <body class="light">
+
+        <header style="background: none;">
+
+            <div class="btn-color-toggle">
+                <img onclick="darkModeToggle()" src="./images/icons/icon_bulb_light.png">
+            </div>
+
+            <div class="logo">
+                <img src="./images/logo46.png">
+            </div>
+
+        </header>
+
+        <Section class="container">
+
+            <section>
+
+                <div class="mainP">
+                    <video class="playerUpl" type="video/mp4" controls><source></video>
+                    
+                    <div class="progress">
+                        <div class="bar"></div >
+                        <div class="percent">0%</div >
+                    </div>
+                    
+                    <div id="status"></div>
+
+                    <input type="file" name="myfile">                    
+                </div>
+
+            </section>
+
+            <section class="formSect">
+
+                <form action="file-echo2.php" method="post" enctype="multipart/form-data">
+
+                    <section>
+                        <div class="form-group">
+                            <label for="e1">Video Title</label>
+                            <input type="text" class="form-control" id="e1" placeholder="The Little Robot... (36 characters remaining)">
+                        </div>                        
+                    </section>
+
+                    <section>
+
+                        <div class="formSer">
+                            <div>
+                                <label for="e1">Series Title</label>
+                                <input type="text" class="form-control" id="e2" placeholder="The Little Robot... (36 characters remaining)">
+                            </div>                         
+
+                            <div>
+                                <label for="e2">Season (Optional)</label>
+                                <input type="text" class="form-control" id="e2" placeholder="exp. Season 1....">
+                            </div>
+
+                            <div>
+                                <label for="e3">Episode (Optional) </label>
+                                <select class="form-control" id="e3">
+                                    <option></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <!-- channels are set up by user in profile pop option to make a channel should be set to -->
+                                <label for="">Channels</label>
+                                <select name="" id="">
+                                    <option value="">Test Channel 1</option>
+                                    <option value="">Test Channel 2</option>
+                                </select>
+
+                            </div>                            
+                        </div>
+
+
+                    </section>
+
+                    <section>
+                        <label for="e4">Description</label>
+
+                        <div class="form-group">
+
+                            <textarea class="form-control" id="e4" placeholder="Description"></textarea>
+
+                        </div>
+
+                    </section>
+
+                    <section>
+
+                        <div class="form-group">
+                            <label for="e5">Tags (13 Tags Remaining)</label>
+                            <input type="text" class="form-control" id="e5" placeholder="Gaming, PS4, ect..">
+                        </div>
+
+                        <div class="formEx">
+                            
+                            <div class="checkbox">
+                                <label for="e6">Graphic Content? </label>                                
+                                <input type="checkbox" id="e6">
+                                <span class="arrow"></span>
+                            </div>
+
+                            <div class="checkbox">
+                                <label for="e6">Explicit Content? </label>                                
+                                <input type="checkbox" id="e6">
+                                <span class="arrow"></span>
+                            </div>
+                                                  
+                        </div>
+
+
+
+                    </section>
+
+                    <section>
+
+                        <div class="formLeg">
+                            <div>
+                                <label for="e7">Rating</label>
+                                <select class="form-control" id="e7">
+                                    <option>Youths/Family</option>
+                                    <option>Teens</option>
+                                    <option>Mature</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="e8">Privacy Settings</label>
+                                <select class="form-control" id="e8">
+                                    <option>Public</option>
+                                    <option>Subscribers</option>
+                                    <option>Privet</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="e9">License</label>
+                                <select class="form-control" id="e9">
+                                    <option>Standard Gilleo License</option>
+                                    <option>Creative Commons License</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="e10">Language in Video (Optional)</label>
+                                <select class="form-control" id="e10">
+                                    <option>English</option>
+                                    <option>Spanish</option>
+                                    <option>French</option>
+                                    <option>Japanese</option>
+                                    <option>Russian</option>
+                                    <option>Chinese</option>
+                                    <option>Portuguese</option>
+                                    <option>Arabic</option>
+                                    <option>Hindi</option>
+                                    <option>Bangla/Bengali</option>
+                                    <option>Indonesian</option>
+                                    <option>German</option>
+                                    <option>Urdu</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section>
+
+
+                    </section>
+
+                    <section class="genForm">
+
+                        <!-- choose a main genre then a sub genre option will pop up -->
+
+                        <label >Genres (Only 1 categorie)
+                        </label> 
+
+                        <div class="genRow">
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Movie
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Show
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Music
+                            </div>
+
+                            <div class="checkbox">
+                                <label >
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Science
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Nature
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>News
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Documentary
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Educational
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Travel
+                            </div>
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="#">
+                                    <span class="arrow"></span>
+                                </label>Religion
+                            </div>
+
+                            <div class="checkbox checked">
+                                <label>
+                                    <input type="checkbox" checked name="#">
+                                    <span class="arrow"></span>
+                                </label>Entertainment
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <section>
+                        <!-- after main genre is selected sub-genre for the selected main genre will show up  -->
+                        <label >sub-Genres (Only 1 categorie)
+                        </label>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                        <div class="genRow"></div>
+                    </section>
+
+                    <div class="termsForm">
+                        <p>By submitting your videos to circle, you acknowledge that you agree to circle's <a href="./termsofuse.html">Terms of Service</a> and <a href="./uploadingrules.html">Community Guidelines</a>.</p>
+                        <p>Please be sure not to violate other Creators copyright or privacy in uploading this video.</p>
+
+                        <button type="submit" value="Upload File to Server">Upload</button>                        
+                    </div>
+
+                </form>
+
+            </section>
+            
+        </Section>
+
+        <footer>
+
+            <div class="containerF">
+
+                <div class="delimiter"></div>
+
+                <!-- COPYRIGHT TEXT -->
+                <p class="copyright">
+                    Copyright &copy; 2018-<script>document.write(new Date().getFullYear())</script> The Gilleo Project, All Rights Reserved
+                </p>
+            </div>
+
+        </footer>
+    </body>
+
+    <datalist>
+        <script src="js/custom.js"></script>
+    </datalist>
+
+</html>
