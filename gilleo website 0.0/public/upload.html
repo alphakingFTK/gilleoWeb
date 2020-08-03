@@ -24,9 +24,6 @@
     <body class="light">
 
         <header style="background: none;">
-
-            <div class="btn-color-toggle">
-                <img onclick="darkModeToggle()" src="./images/icons/icon_bulb_light.png">
             </div>
 
             <div class="logo">
@@ -59,6 +56,18 @@
                 <form action="file-echo2.php" method="post" enctype="multipart/form-data">
 
                     <section>
+                        <div class="formCh">
+                            <!-- channels are set up by user in profile pop option to make a channel should be set to -->
+                            <label for="">Channels</label>
+                            <select name="" id="">
+                                <option value="">Test Channel 1</option>
+                                <option value="">Test Channel 2</option>
+                            </select>
+
+                        </div>                          
+                    </section>
+
+                    <section>
                         <div class="form-group">
                             <label for="e1">Video Title</label>
                             <input type="text" class="form-control" id="e1" placeholder="The Little Robot... (36 characters remaining)">
@@ -69,60 +78,63 @@
 
                         <div class="formSer">
                             <div>
-                                <label for="e1">Series Title</label>
-                                <input type="text" class="form-control" id="e2" placeholder="The Little Robot... (36 characters remaining)">
-                            </div>                         
+                                <!-- checking box makes series section opin to be filled out -->
 
-                            <div>
-                                <label for="e2">Season (Optional)</label>
-                                <input type="text" class="form-control" id="e2" placeholder="exp. Season 1....">
+                                <label for="e1">Is this a Series?</label>
+                                
+                                <input type="checkbox" id="e1">
+                                <span class="arrow"></span>
                             </div>
 
-                            <div>
-                                <label for="e3">Episode (Optional) </label>
-                                <select class="form-control" id="e3">
-                                    <option></option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                    <option>7</option>
-                                    <option>8</option>
-                                    <option>9</option>
-                                    <option>10</option>
-                                    <option>11</option>
-                                    <option>12</option>
-                                    <option>13</option>
-                                    <option>14</option>
-                                    <option>15</option>
-                                    <option>16</option>
-                                </select>
-                            </div>
-                            
-                            <div>
-                                <!-- channels are set up by user in profile pop option to make a channel should be set to -->
-                                <label for="">Channels</label>
-                                <select name="" id="">
-                                    <option value="">Test Channel 1</option>
-                                    <option value="">Test Channel 2</option>
-                                </select>
+                            <div class="formSer2">
+                                <div>
+                                    <label for="e2">Series Title</label>
+                                    <input type="text" class="form-control" id="e2" placeholder="The Little Robot... (36 characters remaining)">
+                                </div>                         
 
-                            </div>                            
+                                <div>
+                                    <label for="e2">Season (Optional)</label>
+                                    <input type="text" class="form-control" id="e2" placeholder="exp. Season 1....">
+                                </div>
+
+                                <div>
+                                    <label for="e3">Episode (Optional) </label>
+                                    <select class="form-control" id="e3">
+                                        <option selected disabled>Choose A Episode</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
                         </div>
-
 
                     </section>
 
                     <section>
-                        <label for="e4">Description</label>
+                        <div>
+                            <label for="e4">Description</label>
 
-                        <div class="form-group">
+                            <div class="form-group">
 
-                            <textarea class="form-control" id="e4" placeholder="Description"></textarea>
+                                <textarea class="form-control" id="e4" placeholder="Description"></textarea>
 
-                        </div>
+                            </div>
 
+                        </div>                        
                     </section>
 
                     <section>
@@ -132,30 +144,38 @@
                             <input type="text" class="form-control" id="e5" placeholder="Gaming, PS4, ect..">
                         </div>
 
+                    </section>
+
+                    <section>
+
                         <div class="formEx">
-                            
-                            <div class="checkbox">
-                                <label for="e6">Graphic Content? </label>                                
-                                <input type="checkbox" id="e6">
-                                <span class="arrow"></span>
+
+                            <div class="formEx2">
+                                <div class="checkOption">
+                                    <label for="e6">Graphic Content? </label>                                
+                                    <input type="checkbox" id="e6">
+                                    <span class="arrow"></span>
+                                </div>
+
                             </div>
 
-                            <div class="checkbox">
-                                <label for="e6">Explicit Content? </label>                                
-                                <input type="checkbox" id="e6">
-                                <span class="arrow"></span>
+                            <div class="formEx2">
+
+                                <div class="checkOption">
+                                    <label for="e6">Explicit Content? </label>                                
+                                    <input type="checkbox" id="e6">
+                                    <span class="arrow"></span>
+                                </div>
                             </div>
-                                                  
+                        
                         </div>
-
-
 
                     </section>
 
                     <section>
 
                         <div class="formLeg">
-                            <div>
+                            <div class="formLeg2">
                                 <label for="e7">Rating</label>
                                 <select class="form-control" id="e7">
                                     <option>Youths/Family</option>
@@ -164,7 +184,7 @@
                                 </select>
                             </div>
 
-                            <div>
+                            <div class="formLeg2">
                                 <label for="e8">Privacy Settings</label>
                                 <select class="form-control" id="e8">
                                     <option>Public</option>
@@ -173,7 +193,7 @@
                                 </select>
                             </div>
 
-                            <div>
+                            <div class="formLeg2">
                                 <label for="e9">License</label>
                                 <select class="form-control" id="e9">
                                     <option>Standard Gilleo License</option>
@@ -181,7 +201,7 @@
                                 </select>
                             </div>
 
-                            <div>
+                            <div class="formLeg2">
                                 <label for="e10">Language in Video (Optional)</label>
                                 <select class="form-control" id="e10">
                                     <option>English</option>
@@ -206,114 +226,114 @@
 
                     <section>
 
+                        <div class="genForm">
 
-                    </section>
+                            <!-- choose a main genre then a sub genre option will pop up -->
 
-                    <section class="genForm">
+                            <label >Genres (Only 1 categorie)
+                            </label> 
 
-                        <!-- choose a main genre then a sub genre option will pop up -->
+                            <div class="genRow">
 
-                        <label >Genres (Only 1 categorie)
-                        </label> 
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Movie
+                                </div>
 
-                        <div class="genRow">
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Show
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Movie
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Music
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Show
-                            </div>
+                                <div class="checkOption">
+                                    <label >
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Science
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Music
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Nature
+                                </div>
 
-                            <div class="checkbox">
-                                <label >
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Science
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>News
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Nature
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Documentary
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>News
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Educational
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Documentary
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Travel
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Educational
-                            </div>
+                                <div class="checkOption">
+                                    <label>
+                                        <input type="checkbox" name="#">
+                                        <span class="arrow"></span>
+                                    </label>Religion
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Travel
-                            </div>
+                                <div class="checkOption checked">
+                                    <label>
+                                        <input type="checkbox" checked name="#">
+                                        <span class="arrow"></span>
+                                    </label>Entertainment
+                                </div>
 
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" name="#">
-                                    <span class="arrow"></span>
-                                </label>Religion
-                            </div>
-
-                            <div class="checkbox checked">
-                                <label>
-                                    <input type="checkbox" checked name="#">
-                                    <span class="arrow"></span>
-                                </label>Entertainment
                             </div>
 
                         </div>
-
                     </section>
 
                     <section>
-                        <!-- after main genre is selected sub-genre for the selected main genre will show up  -->
-                        <label >sub-Genres (Only 1 categorie)
-                        </label>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
-                        <div class="genRow"></div>
+                        <div class="genForm">
+                            <!-- after main genre is selected sub-genre for the selected main genre will show up  -->
+                            <label >sub-Genres (Only 1 categorie)
+                            </label>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                            <div class="genRow"></div>
+                        </div>                        
                     </section>
 
                     <div class="termsForm">

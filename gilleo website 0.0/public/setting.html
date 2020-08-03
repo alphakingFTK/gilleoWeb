@@ -9,7 +9,7 @@
 		<meta name="author" content="Gilleo Inc">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         
-        <title>Gilleo | Landing</title>
+        <title>Gilleo | Setting</title>
         <link rel="icon" href="./images/favicon.ico">
 
         <link href="css/style.css" rel="stylesheet"> 
@@ -22,14 +22,12 @@
     </head>
 
     <body class="light">
+
         <header style="background: none;">
+
             <div class="uploadVid">
                 <a href="./upload.html"><img class="uploadImg" src="./images/icons/video-camera.png
                 "></a>
-            </div>
-
-            <div class="btn-color-toggle">
-                <img onclick="darkModeToggle()" src="./images/icons/icon_bulb_light.png">
             </div>
 
             <div class="logo">
@@ -39,6 +37,102 @@
         </header>
 
         <Section class="container">
+
+            <section class="settFiles">
+
+                <div class="textInf">
+
+                	<p>Choose the level of age rating you are comfortable to view. </p>
+                	<p>** Choosing "Teens" will show also "Youths/Family" but not "Mature" level ratings</p>
+
+                </div>
+
+                <div>
+
+                    <label for="">Rating Level</label>
+                        
+                    <div id="radios">
+                            
+                                
+                        <label class="labels" for="zx1"><input id="zx1" type="radio" checked>Youths/Family</label>
+                            
+                        <label class="labels" for="zx2"><input id="zx2" type="radio">Teens</label>
+                            
+                        <label class="labels" for="zx3"><input id="zx3" type="radio">Mature</label>
+                            
+                            
+                        <div id="bckgrnd"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="settFiles">
+                <div class="textInf">
+                    <p>Check which content your comfortable of viewing</p>
+                </div>
+
+                <div>
+                	<label class="switch" for="xc1">Graphic content?</label>
+                    <input type="checkbox" name="" id="xc1">
+                    <span class="arrow"></span>
+                </div>
+
+                <div>
+                    <label class="switch" for="xc1">Explicit content?</label>
+                    <input type="checkbox" name="" id="xc1">
+                    <span class="arrow"></span>
+                </div>
+
+            </section>
+
+            <section class="settFiles">
+
+                <div>
+                    <label for="xc3">Dark Theme</label>
+                    <input onclick="darkModeToggle()" type="checkbox" name="" id="xc3">
+                </div>      
+                          
+            </section>
+
+            <section class="settFiles">
+                <label for="">Wallet</label>
+                <!--For users who Subscribe to a channels the amount to pay and the form of payment shows up here, payments are process the 1st of the month-->
+                <div style="display: flex;">
+                    <p>Total: $ </p><a>6.00</a>
+                </div>
+				<!--Creators with a following over 500 earns from subacriptions at 60% can be paid out the following month after collection on the 2nd of the month-->
+                <div style="display: flex;">
+                    <p>Earning: $ </p><a>1.80</a>
+                </div>
+
+                <div>
+                    <label for="">PayPal</label>
+                    <input type="text" name="link" id="" placeholder="use paypal as payment/payout">
+                </div>
+            </section>
+
+            <section class="settFiles">
+
+                <label for="">My Subacriptions</label>
+
+                <!--All paid subscriptions shows up here-->
+
+                <div style="display: flex;">
+                    <p>Test Channel 1 </p>
+                    <a>3.00</a>
+                    <a class="cbutton" href="">Cancel</a>
+                </div>
+
+                <div style="display: flex;">
+                    <p>Test Channel 2 </p>
+                    <a>3.00</a>
+                    <a class="cbutton" href="">Cancel</a>
+                </div>
+
+            </section>
+            
         </Section>
 
         <footer>
