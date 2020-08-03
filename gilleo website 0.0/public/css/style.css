@@ -167,6 +167,25 @@ button {
     padding:0px 3px;
 }
 
+#radios {
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 5;
+    width: 350px;
+    white-space: nowrap;
+}
+
+#radios input {
+    padding: 0px;
+}
+
+#radios .labels {
+    display: inline;
+    min-width: 90px;
+    margin: 5px;
+}
+
 button:hover {
     background: rgb(255, 255, 255);
     color: rgb(93, 143, 252);
@@ -419,10 +438,14 @@ textarea {
 
 .formSect textarea {
     height: 250px;
+}y
+
+.formSect .checkOption {
+    margin: auto 2%;
 }
 
-.formSect .checkbox {
-    width: 35%;
+.formCh {
+    margin: 10px 0px;
 }
 
 .form-group {
@@ -431,12 +454,23 @@ textarea {
 }
 
 .formSer {
+    margin: 10px 0px;
+}
+
+.formSer2 {
     display: flex;
+    padding: 15px;
+    border: 2px solid rgb(169, 169, 169);
 }
 
 .formEx {
-    display: block;
-    text-align: center;
+    display: flex;
+    margin: 15px 0px;
+    padding: 0px 25%;
+}
+
+.formEx2 {
+    width: 50%;
 }
 
 .formLeg {
@@ -444,8 +478,12 @@ textarea {
     margin: 5px 0px;
 }
 
+.formLeg2 {
+    width: 25%;
+}
+
 .genForm {
-    margin: 0% 8%;
+    margin: 3% 8%;
 }
 
 .genRow {
@@ -472,6 +510,10 @@ textarea {
     font-weight: bold;
 }
 
+.playerC button {
+    margin: 5px 0px;
+}
+
 .vidPlayer {
     width: 85%;
 }
@@ -490,11 +532,7 @@ textarea {
 }
 
 .plySs {
-    width: 10%;
-}
-
-.plySe {
-    width: 10%;
+    width: 3.5%;
 }
 
 .plyTitle {
@@ -694,7 +732,6 @@ textarea {
     width: 50%;
 }
 
-
 .ddTab2 {
     float: left;
     width: 50%;
@@ -753,10 +790,47 @@ textarea {
 }
 
 .tdTab {
-    width: 82%;
-    min-height: 150px;
+    display: flex;
     padding: 5px;
     margin-left: auto;
+}
+
+.icTab {
+    width: 79%;
+    padding: 5px;
+}
+
+.iccTab {
+    width: 19%;
+    padding: 5px;
+}
+
+/* Setting */
+
+.settFiles {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid rgba(167, 166, 166, 0.733);
+}
+
+.settFiles label {
+    font-weight: bold;
+}
+
+.settFiles p {
+    margin: 0px 5px;
+}
+
+.cbutton {
+    margin: 0px 0px 0px 15px;
+}
+
+.textInf {
+    margin: 10px 0px;
+}
+
+.textInf p {
+    font-style: italic;
 }
 
 /* Light Theme */
