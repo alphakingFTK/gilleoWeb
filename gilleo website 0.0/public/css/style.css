@@ -825,6 +825,11 @@ textarea {
     margin: 0px 0px 0px 15px;
 }
 
+.ecText {
+    font-size: 10px;
+    font-style: italic;
+}
+
 .textInf {
     margin: 10px 0px;
 }
